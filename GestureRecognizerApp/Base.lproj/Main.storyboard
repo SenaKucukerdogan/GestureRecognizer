@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GestureRecognizerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chicago2" translatesAutoresizingMaskIntoConstraints="NO" id="sa6-Zf-L1F">
+                                <rect key="frame" x="20" y="198" width="374" height="247"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Afternoon in Chicago" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSh-7G-f8n">
+                                <rect key="frame" x="99" y="520" width="216" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="jWw-h0-maO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sa6-Zf-L1F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4sY-Jh-3Cw"/>
+                            <constraint firstItem="sa6-Zf-L1F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="154" id="QwQ-ud-kVM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gSh-7G-f8n" secondAttribute="bottom" constant="253" id="SSV-LU-uAi"/>
+                            <constraint firstItem="gSh-7G-f8n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="f8u-ya-pZA"/>
+                            <constraint firstItem="gSh-7G-f8n" firstAttribute="top" secondItem="sa6-Zf-L1F" secondAttribute="bottom" constant="75" id="hW3-T1-i1c"/>
+                            <constraint firstItem="sa6-Zf-L1F" firstAttribute="centerX" secondItem="gSh-7G-f8n" secondAttribute="centerX" id="lpe-Yt-O5O"/>
+                            <constraint firstItem="sa6-Zf-L1F" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rWp-qH-fFK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="sa6-Zf-L1F" id="ABp-OW-KL3"/>
+                        <outlet property="myLabel" destination="gSh-7G-f8n" id="kgR-G0-sEb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="80.357142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chicago2" width="500" height="300"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
